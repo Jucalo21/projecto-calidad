@@ -1,0 +1,103 @@
+body{
+    background-color: lightblue;
+    color: black;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: coral;
+}
+img{
+    width: 100%;
+}
+
+#navbar{
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+#navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    z-index: 100;
+}
+
+#navbar li{
+float: left;
+}
+#navbar li a{
+    padding: 10px 5px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1em;
+    text-align: center;
+    color: white;
+}
+
+#navbar li a:hover{
+    background-color: lightcoral;
+    color: black;
+}
+
+.myicon{
+    color: white;
+    font-size: 1.5em;
+    padding: 10px;
+    display: none;
+}
+
+#content{
+    max-width: 1180px;
+    position: relative;
+    top: 80px;
+    margin: 0 auto;
+    background-color: azure;
+    padding: 10px 10px;
+}
+
+#content header{
+    height: 120px;
+    padding: 10px 20px;
+    background-color: rgb(210, 249, 250);
+    border-radius: 1em;
+}
+
+#principal{
+    border: 1px;
+    width: 40%;
+    float: left;
+    padding: 5px;
+}
+
+#secundario{
+    border: 1px;
+    width: 40%;
+    float: left;
+    padding: 5px;
+}
+
+#content aside{
+    border: 1px;
+    width: 20%;
+    float: left;
+    padding: 5px;
+}
+
+#content footer{
+    clear: both;
+    width: 100%;
+    border: 1px ;
+    background-color: rgb(210, 249, 250);
+    color: rgb(51, 24, 3);
+    height: 70px;
+    padding: 30px;
+}
