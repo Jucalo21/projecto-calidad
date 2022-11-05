@@ -1,3 +1,4 @@
+/*Cuerpo*/
 body{
     background-color: lightblue;
     color: black;
@@ -7,14 +8,18 @@ a{
     text-decoration: none;
 }
 
+/*Cambio de color cuando se pasa el mouse por encima*/
 a:hover{
     text-decoration: underline;
     color: coral;
 }
+
 img{
     width: 100%;
 }
 
+
+/*Barra de navegacion*/
 #navbar{
     background-color: black;
     position: absolute;
@@ -23,6 +28,7 @@ img{
     width: 100%;
 }
 
+/*Barra de navegacion*/
 #navbar ul{
     list-style-type: none;
     margin: 0;
@@ -31,9 +37,16 @@ img{
     z-index: 100;
 }
 
+.lista-sm{
+    display: block;
+}
+
+/*Barra de navegacion*/
 #navbar li{
 float: left;
 }
+
+/*Barra de navegacion*/
 #navbar li a{
     padding: 10px 5px;
     display: inline-block;
@@ -43,11 +56,13 @@ float: left;
     color: white;
 }
 
+/*Cambio de color cuando se pasa el mouse por encima de la barra de navegacion*/
 #navbar li a:hover{
     background-color: lightcoral;
     color: black;
 }
 
+/*Icono de la barra de navegacion*/
 .myicon{
     color: white;
     font-size: 1.5em;
@@ -55,15 +70,17 @@ float: left;
     display: none;
 }
 
+/*Contenido del cuerpo de texto, abarca desde cabecera hasta el pie de pagina*/
 #content{
     max-width: 1180px;
     position: relative;
     top: 80px;
     margin: 0 auto;
     background-color: azure;
-    padding: 10px 10px;
+    padding: 2%;
 }
 
+/*Cabecera de la pagina*/
 #content header{
     height: 120px;
     padding: 10px 20px;
@@ -71,6 +88,7 @@ float: left;
     border-radius: 1em;
 }
 
+/*Seccion principal*/
 #principal{
     border: 1px;
     width: 40%;
@@ -78,6 +96,7 @@ float: left;
     padding: 5px;
 }
 
+/*Seccion secundaria*/
 #secundario{
     border: 1px;
     width: 40%;
@@ -85,6 +104,7 @@ float: left;
     padding: 5px;
 }
 
+/*Sidebar*/
 #content aside{
     border: 1px;
     width: 20%;
@@ -92,6 +112,7 @@ float: left;
     padding: 5px;
 }
 
+/*Pie de pagina*/
 #content footer{
     clear: both;
     width: 100%;
@@ -100,4 +121,87 @@ float: left;
     color: rgb(51, 24, 3);
     height: 70px;
     padding: 30px;
+}
+
+/*Cuando el ancho de la pagina sea de 820px o menos se adaptara a las siguientes caracteristicas*/
+@media screen and (max-witdh: 820px) {
+    #content{
+        padding: 0;
+        max-width: 100%;
+    }
+
+    #content header{
+        padding: 0;
+        border-radius: 0;
+    }
+
+    #principal{
+        padding: 3%;
+        width: 45%;
+    }
+
+    #secundaria{
+        float: right;
+        padding: 3%;
+        width: 45%;
+    }
+
+    #content aside{
+        clear: both;
+        padding: 5%;
+        width: 90%;
+    }
+
+    #content footer{
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/*Cuando el ancho de la pagina sea de 600px o menos se adaptara a las siguientes caracteristicas*/
+@media screen and (max-witdh: 600px) {
+    #content{
+        width: auto;
+    }
+
+    #principal{
+        width: auto;
+        float: none;
+        margin: 0px;
+    }
+
+    #secundario{
+        width: auto;
+        float: none;
+        margin: 0px;
+    }
+
+    #content aside{
+        padding: 0;
+        width: auto;
+    }
+
+    #content footer{
+        width: auto;     
+    }
+
+    .lista-sm{
+        display: none;
+    }
+
+    #navbar li{
+        float: none;
+        display: block;
+    }
+
+    #navbar li a{
+        padding: 5px;
+        text-align: left;
+        width: 100%;
+    }
+
+    .myicon{
+        display: block;        
+        text-align: right;
+    }
 }
