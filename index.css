@@ -218,9 +218,15 @@ float: left;
 }
 
 .servicio{
-    margin-left: -5px;
     max-width: 450px;
     min-width: 400px;
     max-height: 300px;
     min-height: 200px;
-} 
+}
+
+.materia{
+    max-width: 450px;
+    min-width: 300px;
+    max-height: 450px;
+    min-height: 300px;
+}
