@@ -1,7 +1,11 @@
+/*Fuente de estilo importada*/
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap');
+
 /*Cuerpo*/
 body{
     background-color: lightblue;
     color: black;
+    font-family: 'Catamaran', sans-serif;
 }
 
 a{
@@ -56,6 +60,10 @@ float: left;
     color: white;
 }
 
+#navbar li.active a{
+    color: lightseagreen;
+}
+
 /*Cambio de color cuando se pasa el mouse por encima de la barra de navegacion*/
 #navbar li a:hover{
     background-color: lightcoral;
@@ -75,9 +83,9 @@ float: left;
     max-width: 1180px;
     position: relative;
     top: 80px;
-    margin: 0 auto;
+    margin: 0px auto;
     background-color: azure;
-    padding: 2%;
+    padding: 1%;
 }
 
 /*Cabecera de la pagina*/
@@ -90,6 +98,7 @@ float: left;
 
 /*Seccion principal*/
 #principal{
+    margin-top: 20px;
     border: 1px;
     width: 40%;
     float: left;
@@ -98,6 +107,7 @@ float: left;
 
 /*Seccion secundaria*/
 #secundario{
+    margin-top: 20px;
     border: 1px;
     width: 40%;
     float: left;
@@ -106,6 +116,7 @@ float: left;
 
 /*Sidebar*/
 #content aside{
+    margin-top: 20px;
     border: 1px;
     width: 20%;
     float: left;
@@ -205,3 +216,11 @@ float: left;
         text-align: right;
     }
 }
+
+.servicio{
+    margin-left: -5px;
+    max-width: 450px;
+    min-width: 400px;
+    max-height: 300px;
+    min-height: 200px;
+} 
