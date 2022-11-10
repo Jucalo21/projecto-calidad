@@ -2,29 +2,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap');
 
 /*Cuerpo*/
-body{
+body {
     background-color: lightblue;
     color: black;
     font-family: 'Catamaran', sans-serif;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
 /*Cambio de color cuando se pasa el mouse por encima*/
-a:hover{
+a:hover {
     text-decoration: underline;
     color: coral;
 }
 
-img{
+img {
     width: 100%;
 }
 
+/*centra la lista */
+.centro {
+    display: flex;
+    justify-content: center;
+}
+
+.centroTitulo{
+    text-align: center;
+    text-shadow: -1px -1px 1px #aaa,
+    0px 4px 1px rgba(0,0,0,0.5),
+    4px 4px 5px rgba(0,0,0,0.7),
+    0px 0px 7px rgba(0,0,0,0.4);;
+    letter-spacing: 5px;
+}
+.centroTexto {
+    text-align: center;
+}
 
 /*Barra de navegacion*/
-#navbar{
+#navbar {
     background-color: black;
     position: absolute;
     left: 0;
@@ -33,7 +50,7 @@ img{
 }
 
 /*Barra de navegacion*/
-#navbar ul{
+#navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -41,17 +58,17 @@ img{
     z-index: 100;
 }
 
-.lista-sm{
+.lista-sm {
     display: block;
 }
 
 /*Barra de navegacion*/
-#navbar li{
-float: left;
+#navbar li {
+    float: left;
 }
 
 /*Barra de navegacion*/
-#navbar li a{
+#navbar li a {
     padding: 10px 5px;
     display: inline-block;
     text-decoration: none;
@@ -60,18 +77,18 @@ float: left;
     color: white;
 }
 
-#navbar li.active a{
+#navbar li.active a {
     color: lightseagreen;
 }
 
 /*Cambio de color cuando se pasa el mouse por encima de la barra de navegacion*/
-#navbar li a:hover{
+#navbar li a:hover {
     background-color: lightcoral;
     color: black;
 }
 
 /*Icono de la barra de navegacion*/
-.myicon{
+.myicon {
     color: white;
     font-size: 1.5em;
     padding: 10px;
@@ -79,7 +96,7 @@ float: left;
 }
 
 /*Contenido del cuerpo de texto, abarca desde cabecera hasta el pie de pagina*/
-#content{
+#content {
     max-width: 1180px;
     position: relative;
     top: 80px;
@@ -89,7 +106,7 @@ float: left;
 }
 
 /*Cabecera de la pagina*/
-#content header{
+#content header {
     height: 120px;
     padding: 10px 20px;
     background-color: rgb(210, 249, 250);
@@ -97,7 +114,7 @@ float: left;
 }
 
 /*Seccion principal*/
-#principal{
+#principal {
     margin-top: 20px;
     border: 1px;
     width: 40%;
@@ -106,7 +123,7 @@ float: left;
 }
 
 /*Seccion secundaria*/
-#secundario{
+#secundario {
     margin-top: 20px;
     border: 1px;
     width: 40%;
@@ -115,7 +132,7 @@ float: left;
 }
 
 /*Sidebar*/
-#content aside{
+#content aside {
     margin-top: 20px;
     border: 1px;
     width: 20%;
@@ -124,10 +141,10 @@ float: left;
 }
 
 /*Pie de pagina*/
-#content footer{
+#content footer {
     clear: both;
     width: 100%;
-    border: 1px ;
+    border: 1px;
     background-color: rgb(210, 249, 250);
     color: rgb(51, 24, 3);
     height: 70px;
@@ -136,34 +153,34 @@ float: left;
 
 /*Cuando el ancho de la pagina sea de 820px o menos se adaptara a las siguientes caracteristicas*/
 @media screen and (max-witdh: 820px) {
-    #content{
+    #content {
         padding: 0;
         max-width: 100%;
     }
 
-    #content header{
+    #content header {
         padding: 0;
         border-radius: 0;
     }
 
-    #principal{
+    #principal {
         padding: 3%;
         width: 45%;
     }
 
-    #secundaria{
+    #secundaria {
         float: right;
         padding: 3%;
         width: 45%;
     }
 
-    #content aside{
+    #content aside {
         clear: both;
         padding: 5%;
         width: 90%;
     }
 
-    #content footer{
+    #content footer {
         width: 100%;
         padding: 0;
     }
@@ -171,60 +188,61 @@ float: left;
 
 /*Cuando el ancho de la pagina sea de 600px o menos se adaptara a las siguientes caracteristicas*/
 @media screen and (max-witdh: 600px) {
-    #content{
+    #content {
         width: auto;
     }
 
-    #principal{
-        width: auto;
-        float: none;
-        margin: 0px;
-    }
-
-    #secundario{
+    #principal {
         width: auto;
         float: none;
         margin: 0px;
     }
 
-    #content aside{
+    #secundario {
+        width: auto;
+        float: none;
+        margin: 0px;
+    }
+
+    #content aside {
         padding: 0;
         width: auto;
     }
 
-    #content footer{
-        width: auto;     
+    #content footer {
+        width: auto;
     }
 
-    .lista-sm{
+    .lista-sm {
         display: none;
     }
 
-    #navbar li{
+    #navbar li {
         float: none;
         display: block;
     }
 
-    #navbar li a{
+    #navbar li a {
         padding: 5px;
         text-align: left;
         width: 100%;
     }
 
-    .myicon{
-        display: block;        
+    .myicon {
+        display: block;
         text-align: right;
     }
 }
 
-.servicio{
-    max-width: 450px;
-    min-width: 400px;
-    max-height: 300px;
-    min-height: 200px;
+.servicio {
+    max-width: 350px;
+    min-width: 300px;
+    max-height: 200px;
+    min-height: 100px;
+    display: inline;
 }
 
-.materia{
+.materia {
     max-width: 450px;
     min-width: 300px;
     max-height: 450px;
