@@ -53,7 +53,7 @@ img {
 #navbar ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 8px 20px;
     overflow: hidden;
     z-index: 100;
 }
@@ -83,8 +83,8 @@ img {
 
 /*Cambio de color cuando se pasa el mouse por encima de la barra de navegacion*/
 #navbar li a:hover {
-    background-color: lightcoral;
-    color: black;
+    border-radius: 6px;
+    border-bottom: 4px solid white;
 }
 
 /*Icono de la barra de navegacion*/
