@@ -3,7 +3,7 @@
 
 /*Cuerpo*/
 body {
-    background-color: lightblue;
+    background-color: rgb(157, 206, 223);
     color: black;
     font-family: 'Catamaran', sans-serif;
 }
@@ -103,6 +103,7 @@ img {
     margin: 0px auto;
     background-color: azure;
     padding: 1%;
+    border-radius: 12px;
 }
 
 /*Cabecera de la pagina*/
@@ -121,6 +122,7 @@ img {
     float: left;
     padding: 5px;
 }
+
 
 /*Seccion secundaria*/
 #secundario {
@@ -239,7 +241,6 @@ img {
     min-width: 300px;
     max-height: 200px;
     min-height: 100px;
-    display: inline;
 }
 
 .materia {
