@@ -4,9 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/782e424ced.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="registro.css">
+    <title>Registro</title>
+    
 </head>
 <body>
-    
+    <!--Barra de navegacion y listas-->
+    <nav id="navbar" class="centro">
+        <!--Icono de la barra de navegacion-->
+        <div class="myicon">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul class="lista-sm">
+            <!--Direccionamiento de la barra de navegacion-->
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="actividades.html">Actividades</a></li>
+            <li><a href="atencion.html">Atencion al cliente</a></li>
+            <li><a href="registro.html">Registrarse</a></li>
+            <li><a href="inicioDeSesion.html">Inicio de Sesion</a></li>
+        </ul>
+    </nav>
+    <!-- Creacion formulario de registro -->
+    <form class="formulario">
+        <h1>Registro</h1>
+        <!-- Formulario de nombre -->
+        <div class="contenedor">
+            <div class="input-contenedor">
+                <i class="fa-solid fa-user icon"></i>
+                <input type="text" placeholder="Nombre Completo">
+            </div>
+            <!-- Formulario de correo electronico -->
+            <div class="input-contenedor">
+                <i class="fa-solid fa-envelope icon"></i>
+                <input type="text" placeholder="Correo electronico">
+            </div>
+            <!-- Formulario de contraseña -->
+            <div class="input-contenedor">
+                <i class="fa-solid fa-key icon"></i>
+                <input type="password" placeholder="Contraseña">
+            </div>
+            <input type="submit" value="Registrarse" class="button">
+            <p>Al Registrarse, aceptas las condiciones de uso y la politica de privacidad de la empresa</p>
+            <!-- Redireccionamiento a inicio de sesión -->
+            <p>¿Ya tienes una cuenta?<a class="link"href="inicioDeSesion.html"> Iniciar Sesión</a></p>
+        </div>
+    <!--Libreria de jquery importada-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--Funciones de app.js-->
+    <script src="app.js"></script>
+    </form>
 </body>
 </html>

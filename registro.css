@@ -1,0 +1,158 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: url(/imagenes/matematicas.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+*{
+    box-sizing: border-box;
+}
+
+.centro {
+    display: flex;
+    justify-content: center;
+}
+
+.centroTitulo{
+    text-align: center;
+    text-shadow: -1px -1px 1px #aaa,
+    0px 4px 1px rgba(0,0,0,0.5),
+    4px 4px 5px rgba(0,0,0,0.7),
+    0px 0px 7px rgba(0,0,0,0.4);;
+    letter-spacing: 5px;
+}
+.centroTexto {
+    text-align: center;
+}
+
+/*Barra de navegacion*/
+#navbar {
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+/*Barra de navegacion*/
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 8px 20px;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.lista-sm {
+    display: block;
+}
+
+/*Barra de navegacion*/
+#navbar li {
+    float: left;
+}
+
+/*Barra de navegacion*/
+#navbar li a {
+    padding: 10px 5px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1em;
+    text-align: center;
+    color: white;
+}
+
+#navbar li.active a {
+    color: lightseagreen;
+}
+
+/*Cambio de color cuando se pasa el mouse por encima de la barra de navegacion*/
+#navbar li a:hover {
+    border-radius: 6px;
+    border-bottom: 4px solid white;
+}
+
+/*Icono de la barra de navegacion*/
+.myicon {
+    color: white;
+    font-size: 1.5em;
+    padding: 10px;
+    display: none;
+}
+
+
+.contenedor{
+    width: 100%;
+    padding: 15px;
+}
+
+.formulario{
+    background: white;
+    margin-top: 150px;
+    padding: 3px;
+}
+
+h1{
+    text-align: center;
+    color: black;
+    font-size: 40px;
+}
+
+input[type="text"],
+input[type="password"]{
+    font-size: 20px;
+    width: 82%;
+    padding: 10px;
+    border: none;
+}
+
+.input-contenedor{
+    margin-bottom: 15px;
+    border: 1px solid rgb(13, 33, 39);
+}
+
+.icon{
+    min-width: 50px;
+    text-align: center;
+    color: #999;
+}
+
+.button{
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    background: black;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background: rgb(61, 87, 95);
+}
+
+p{
+    text-align: center;
+}
+
+.link{
+    text-decoration: none;
+    color: rgb(173, 8, 165);
+    font-weight: 600px;
+}
+
+.link:hover{
+    color: rgb(71, 110, 122);
+}
+
+@media(min-width:768px){
+    
+.formulario{
+    margin: auto;
+    width: 500px;
+    margin-top: 150px;
+    border-radius: 2%;
+}
+}
