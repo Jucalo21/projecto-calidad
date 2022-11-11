@@ -81,6 +81,13 @@ img {
     color: lightseagreen;
 }
 
+li {
+    margin: auto;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
 /*Cambio de color cuando se pasa el mouse por encima de la barra de navegacion*/
 #navbar li a:hover {
     border-radius: 6px;
@@ -93,6 +100,14 @@ img {
     font-size: 1.5em;
     padding: 10px;
     display: none;
+}
+
+.atencion {
+    margin-top: 20px;
+    border: 1px;
+    width: 33%;
+    float: left;
+    padding: 5px;
 }
 
 /*Contenido del cuerpo de texto, abarca desde cabecera hasta el pie de pagina*/
