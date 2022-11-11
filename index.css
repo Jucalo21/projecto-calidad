@@ -3,7 +3,10 @@
 
 /*Cuerpo*/
 body {
-    background-color: rgb(210, 251, 61);
+    background-image: url("imagenes/fondo.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: black;
     font-family: 'Catamaran', sans-serif;
 }
@@ -116,10 +119,7 @@ li {
     position: relative;
     top: 80px;
     margin: 0px auto;
-    background-image: url("imagenes/fondo.jpg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-color: rgba(255, 253, 240, 0.61);
     padding: 1%;
     border-radius: 12px;
 }
@@ -128,7 +128,7 @@ li {
 #content header {
     height: 120px;
     padding: 10px 20px;
-    background-color: rgba(210, 249, 250, 0.404);
+    background-color: rgba(250, 246, 210, 0.904);
     border-radius: 7px;
 }
 
@@ -165,15 +165,15 @@ li {
     clear: both;
     width: 100%;
     border: 1px;
-    background-color: rgba(210, 249, 250, 0.418);
+    background-color: rgba(249, 250, 210, 0.418);
     border-radius: 7px;
-    color: rgb(51, 24, 3);
+    color: rgba(26, 15, 8, 0.959);
     height: 70px;
     padding: 30px;
 }
 
 /*Cuando el ancho de la pagina sea de 820px o menos se adaptara a las siguientes caracteristicas*/
-@media screen and (max-witdh: 820px) {
+@media screen and (max-width: 820px) {
     #content {
         padding: 0;
         max-width: 100%;
@@ -208,7 +208,7 @@ li {
 }
 
 /*Cuando el ancho de la pagina sea de 600px o menos se adaptara a las siguientes caracteristicas*/
-@media screen and (max-witdh: 600px) {
+@media screen and (max-width: 600px) {
     #content {
         width: auto;
     }
