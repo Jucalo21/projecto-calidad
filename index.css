@@ -3,7 +3,7 @@
 
 /*Cuerpo*/
 body {
-    background-color: rgb(157, 206, 223);
+    background-color: rgb(210, 251, 61);
     color: black;
     font-family: 'Catamaran', sans-serif;
 }
@@ -101,7 +101,10 @@ img {
     position: relative;
     top: 80px;
     margin: 0px auto;
-    background-color: azure;
+    background-image: url("imagenes/fondo.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     padding: 1%;
     border-radius: 12px;
 }
@@ -110,8 +113,8 @@ img {
 #content header {
     height: 120px;
     padding: 10px 20px;
-    background-color: rgb(210, 249, 250);
-    border-radius: 1em;
+    background-color: rgba(210, 249, 250, 0.404);
+    border-radius: 7px;
 }
 
 /*Seccion principal*/
@@ -147,7 +150,8 @@ img {
     clear: both;
     width: 100%;
     border: 1px;
-    background-color: rgb(210, 249, 250);
+    background-color: rgba(210, 249, 250, 0.418);
+    border-radius: 7px;
     color: rgb(51, 24, 3);
     height: 70px;
     padding: 30px;
@@ -237,10 +241,10 @@ img {
 }
 
 .servicio {
-    max-width: 350px;
-    min-width: 300px;
-    max-height: 200px;
-    min-height: 100px;
+    max-width: 270px;
+    min-width: 270px;
+    max-height: 170px;
+    min-height: 70px;
 }
 
 .materia {
