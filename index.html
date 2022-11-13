@@ -15,7 +15,7 @@
 
 <body>
     <!--Barra de navegacion y listas-->
-    <nav id="navbar" class="centro">
+    <nav id="navbar">
         <!--Icono de la barra de navegacion-->
         <div class="myicon">
             <i class="fa-solid fa-bars"></i>
@@ -33,12 +33,12 @@
     <div id="content">
         <header>
             <!--Cabecera-->
-            <h1 class="centroTitulo">LEARN APP</h1>
-            <h4 class="centroTexto">Pagina de aprendizaje para estudiantes de primaria</h4>
+            <h1 class="titulo">LEARN APP</h1>
+            <h4>Pagina de aprendizaje para estudiantes de primaria</h4>
         </header>
         <section id="principal">
             <!--Seccion principal/Primera seccion de la pagina-->
-            <h2 class="centroTexto">Sección 1</h2>
+            <h2>Sección 1</h2>
             <p><img src="https://picsum.photos/200/150"></p>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
             </p>
@@ -55,7 +55,7 @@
         </section>
         <section id="secundario">
             <!--Seccion secundaria/Segunda seccion de la pagina-->
-            <h2 class="centroTexto">Sección 2</h2>
+            <h2>Sección 2</h2>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
             </p>
 
@@ -70,7 +70,7 @@
                 enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a,</p>
         </section>
         <aside>
-            <h2 class="centroTexto">Sidebar</h2>
+            <h2>Sidebar</h2>
             <!--Sidebar/Imagen importada del placeholder-->
             <a href="https://placeholder.com"><img src="https://via.placeholder.com/350x150" alt=""></a>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
@@ -91,7 +91,11 @@
     <!--Libreria de jquery importada-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!--Funciones de app.js-->
-    <script src="app.js"></script>
+    <script src="app.js">
+        $('.myicon').click(function(params) {
+            
+        })
+    </script>
 </body>
 
 </html>

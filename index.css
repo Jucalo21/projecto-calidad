@@ -25,22 +25,13 @@ img {
     width: 100%;
 }
 
-/*centra la lista */
-.centro {
-    display: flex;
-    justify-content: center;
-}
-
-.centroTitulo{
+.titulo{
     text-align: center;
     text-shadow: -1px -1px 1px #aaa,
     0px 4px 1px rgba(0,0,0,0.5),
     4px 4px 5px rgba(0,0,0,0.7),
     0px 0px 7px rgba(0,0,0,0.4);;
     letter-spacing: 5px;
-}
-.centroTexto {
-    text-align: center;
 }
 
 /*Barra de navegacion*/
@@ -50,6 +41,8 @@ img {
     left: 0;
     top: 0;
     width: 100%;
+    display: flex;
+    justify-content: center
 }
 
 /*Barra de navegacion*/
@@ -130,6 +123,7 @@ li {
     padding: 10px 20px;
     background-color: rgba(250, 246, 210, 0.904);
     border-radius: 7px;
+    text-align: center;
 }
 
 /*Seccion principal*/
@@ -139,6 +133,7 @@ li {
     width: 40%;
     float: left;
     padding: 5px;
+    text-align: center;
 }
 
 
@@ -149,6 +144,7 @@ li {
     width: 40%;
     float: left;
     padding: 5px;
+    text-align: center;
 }
 
 /*Sidebar*/
@@ -158,6 +154,7 @@ li {
     width: 20%;
     float: left;
     padding: 5px;
+    text-align: center;
 }
 
 /*Pie de pagina*/
@@ -236,6 +233,8 @@ li {
 
     .lista-sm {
         display: none;
+        width: 100%;
+        height: 100%;
     }
 
     #navbar li {
@@ -245,13 +244,14 @@ li {
 
     #navbar li a {
         padding: 5px;
-        text-align: left;
+        text-align: center;
         width: 100%;
+        height: 100%;
     }
 
     .myicon {
         display: block;
-        text-align: right;
+        text-align: center;
     }
 }
 
