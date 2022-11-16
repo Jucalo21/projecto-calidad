@@ -55,7 +55,7 @@ $('#btnsave').click(function(e){
         contraseña
     }
     
-    save(user);
+    SaveUser(user);
 
 })
 
