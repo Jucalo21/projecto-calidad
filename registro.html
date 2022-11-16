@@ -8,7 +8,9 @@
     <script src="https://kit.fontawesome.com/782e424ced.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="registro.css">
     <title>Registro</title>
-    
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <!--Barra de navegacion y listas-->
@@ -33,19 +35,19 @@
         <div class="contenedor">
             <div class="input-contenedor">
                 <i class="fa-solid fa-user icon"></i>
-                <input type="text" placeholder="Nombre Completo">
+                <input id="nombre" type="text" placeholder="Nombre Completo">
             </div>
             <!-- Formulario de correo electronico -->
             <div class="input-contenedor">
                 <i class="fa-solid fa-envelope icon"></i>
-                <input type="text" placeholder="Correo electronico">
+                <input id="correo" type="text" placeholder="Correo electronico">
             </div>
             <!-- Formulario de contraseña -->
             <div class="input-contenedor">
                 <i class="fa-solid fa-key icon"></i>
-                <input type="password" placeholder="Contraseña">
+                <input id="contraseña" type="password" placeholder="Contraseña">
             </div>
-            <input type="submit" value="Registrarse" class="button">
+            <input id="btnsave" type="submit" value="Registrarse" class="button">
             <p>Al Registrarse, aceptas las condiciones de uso y la politica de privacidad de la empresa</p>
             <!-- Redireccionamiento a inicio de sesión -->
             <p>¿Ya tienes una cuenta?<a class="link"href="inicioDeSesion.html"> Iniciar Sesión</a></p>
@@ -53,26 +55,11 @@
     </form>
     <!--Libreria de jquery importada-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!--Funciones de app.js-->
     <script src="app.js"></script>
     <!-- Firebase -->
-    <script type="module">
-        // Importar las funciones
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-analytics.js";
-        const firebaseConfig = {
-        apiKey: "AIzaSyAIEIVRbRWkwvybiyJBdbq3d0PK04AGz1o",
-        authDomain: "calidad-de-software-cd503.firebaseapp.com",
-        databaseURL: "https://calidad-de-software-cd503-default-rtdb.firebaseio.com",
-        projectId: "calidad-de-software-cd503",
-        storageBucket: "calidad-de-software-cd503.appspot.com",
-        messagingSenderId: "869207398326",
-        appId: "1:869207398326:web:6f998ff1bc635782505317",
-        measurementId: "G-CJD4MV961G"
-        };
-        // Inicializar Firebase
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
-    </script>
+    <script type="module"></script>
+    <script src="firebase.js"></script>
 </body>
 </html>
