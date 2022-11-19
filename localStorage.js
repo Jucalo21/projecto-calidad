@@ -1,29 +1,15 @@
-//guardar_local();
-obtener_Local();
+//almacenamiento dentro de las variables
+$(document).ready(function () {
+    
+    $(document).submit(function () {
+        var txtNombre = $('#nombre').val();
+        var txtCorreo = $('#correo').val();
+        var txtContraseña = $('#contraseña').val();
 
+        //almacenamiento drento de locastorage
+        localStorage.setItem("User", txtNombre);
+        localStorage.setItem("Email", txtCorreo);
+        localStorage.setItem("Password", txtContraseña);
 
-function obtener_Local() {
-
-    if (localStorage.getItem("nombre")) {
-
-        let nombre = localStorage.getItem("nombre");
-        let persona = JSON.parse(localStorage.getItem("persona"));
-
-        console.log(nombre);
-        console.log(persona);
-    }
-
-}
-
-function guardar_local() {
-    let persona = {
-        nombre: "Juan",
-        correo: "juan123@gmail.com",
-        password: "1234Lx"
-    };
-
-    let nombre = "jose";
-
-    localStorage.setItem("nombre", nombre);
-    localStorage.setItem("persona", JSON.stringify(persona));
-}
+    }); 
+});

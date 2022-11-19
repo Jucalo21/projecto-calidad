@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/782e424ced.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="registro.css">
-    <title>Registro</title>
+    <title>LearnApp-    Registro</title>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="jsquery/jquery-3.6.1.min.js"></script>
+    <script src="localStorage.js"></script>
 </head>
+
 <body>
     <!--Barra de navegacion y listas-->
     <nav id="navbar" class="centro">
@@ -32,42 +36,40 @@
     <form class="formulario">
         <h1>Registro</h1>
         <!-- Formulario de nombre -->
+        <!--Evento de guardado de registro-->
+        <form action="/registro.html" method="post" id="Entradafrom">
         <div class="contenedor">
             <div class="input-contenedor">
-                <i class="fa-solid fa-user icon"></i>
-                <input id="nombre" type="text" placeholder="Nombre Completo">
+                    <i class="fa-solid fa-user icon"></i>
+                    <input id="nombre" type="text" placeholder="Nombre Completo">
+                </div>
+                <!-- Formulario de correo electronico -->
+                <div class="input-contenedor">
+                    <i class="fa-solid fa-envelope icon"></i>
+                    <input id="correo" type="text" placeholder="Username@learnApp.com">
+                </div>
+                <!-- Formulario de contraseña -->
+                <div class="input-contenedor">
+                    <i class="fa-solid fa-key icon"></i>
+                    <input id="contraseña" type="password" placeholder="..........">
+                </div>
+                <!--Boto de registro-->
+                <input id="btnsave" type="submit" value="Registrarse" class="button">
+                <p>* Al Registrarse, aceptas las condiciones de uso y la politica de privacidad de la empresa</p>
+                <!-- Redireccionamiento a inicio de sesión -->
+                <p>¿Ya tienes una cuenta?<a class="link" href="inicioDeSesion.html"> Iniciar Sesión</a></p>
             </div>
-            <!-- Formulario de correo electronico -->
-            <div class="input-contenedor">
-                <i class="fa-solid fa-envelope icon"></i>
-                <input id="correo" type="text" placeholder="Correo electronico">
-            </div>
-            <!-- Formulario de contraseña -->
-            <div class="input-contenedor">
-                <i class="fa-solid fa-key icon"></i>
-                <input id="contraseña" type="password" placeholder="Contraseña">
-            </div>
-            <input id="btnsave" type="submit" value="Registrarse" class="button">
-            <p>* Al Registrarse, aceptas las condiciones de uso y la politica de privacidad de la empresa</p>
-            <!-- Redireccionamiento a inicio de sesión -->
-            <p>¿Ya tienes una cuenta?<a class="link"href="inicioDeSesion.html"> Iniciar Sesión</a></p>
-        </div>
+        </form>
     </form>
-    <script>
-
-guardadoLocal();
-
-function guardadoLocal()
-
-    </script>
     <!--Libreria de jquery importada-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!--Funciones de app.js-->
     <script src="app.js"></script>
     <!-- Firebase -->
     <script type="module"></script>
-    <script src="firebase.js"></script>
-    <script src="localStorage.js"></script>
 </body>
+
 </html>
