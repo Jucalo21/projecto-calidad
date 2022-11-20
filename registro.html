@@ -14,20 +14,20 @@
 </head>
 <body>
     <!--Barra de navegacion y listas-->
-    <nav id="navbar" class="centro">
-        <!--Icono de la barra de navegacion-->
-        <div class="myicon">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-        <ul class="lista-sm">
-            <!--Direccionamiento de la barra de navegacion-->
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="actividades.html">Actividades</a></li>
-            <li><a href="atencion.html">Atencion al cliente</a></li>
-            <li><a href="registro.html">Registrarse</a></li>
-            <li><a href="inicioDeSesion.html">Inicio de Sesion</a></li>
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+        <span></span>
+        </label>
+    
+        <ul class="menu__box">
+            <li><a  class="menu__item" href="index.html">Inicio</a></li>
+            <li><a  class="menu__item" href="actividades.html">Actividades</a></li>
+            <li><a  class="menu__item" href="atencion.html">Atencion al cliente</a></li>
+            <li><a  class="menu__item" href="registro.html">Registrarse</a></li>
+            <li><a  class="menu__item" href="inicioDeSesion.html">Inicio de Sesion</a></li>
         </ul>
-    </nav>
+    </div>
     <!-- Creacion formulario de registro -->
     <form class="formulario">
         <h1>Registro</h1>

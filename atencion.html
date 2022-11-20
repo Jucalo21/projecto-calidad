@@ -15,20 +15,20 @@
 
 <body>
     <!--Barra de navegacion y listas-->
-    <nav id="navbar">
-        <!--Icono de la barra de navegacion-->
-        <div class="myicon">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-        <ul class="lista-sm">
-            <!--Direccionamiento de la barra de navegacion-->
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="actividades.html">Actividades</a></li>
-            <li><a href="atencion.html">Atencion al cliente</a></li>
-            <li><a href="registro.html">Registrarse</a></li>
-            <li><a href="inicioDeSesion.html">Inicio de Sesion</a></li>
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+        <span></span>
+        </label>
+    
+        <ul class="menu__box">
+            <li><a  class="menu__item" href="index.html">Inicio</a></li>
+            <li><a  class="menu__item" href="actividades.html">Actividades</a></li>
+            <li><a  class="menu__item" href="atencion.html">Atencion al cliente</a></li>
+            <li><a  class="menu__item" href="registro.html">Registrarse</a></li>
+            <li><a  class="menu__item" href="inicioDeSesion.html">Inicio de Sesion</a></li>
         </ul>
-    </nav>
+    </div>
     <!--Contenido de la pagina web-->
     <div id="content">
         <header>
@@ -38,15 +38,26 @@
         </header>
         <section class="atencion"><h2>Preguntas Frecuentes</h2>
             <p><img class="servicio" src="imagenes/preguntas_frecuentes.png" alt="preguntas"></p>
+            <h5>Para que sirve esta pagina?</h5>
+            <p>Sirve para poder reforzar y mejorar los temas aprendidos en las asignaturas de estudiantes de primaria.</p>
         </section>
         <section class="atencion">
             <h2>Correos electronicos</h2>
             <p><img class="servicio" src="imagenes/correo.png" alt="correo.png"></p>
-
+            <h5>LearnAPPservicio@gmail.com</h5>
+            <h5>LearnAPPatencion@gmail.com</h5>
         </section>
         <section class="atencion">
             <h2>Telefonos/celulares</h2>
             <p><img class="servicio" src="imagenes/contacto.png" alt="contacto"></p>
+            <p><h4>Telefonos</h4></p>
+            <h5>(57)827-04-36435</h5>
+            <h5>(57)440-60-22897</h5>
+            <h5>(57)300-30-52130</h5>
+            <p><h4>Celulares</h4></p>
+            <h5>57(5)608-43-40</h5>
+            <h5>57(5)230-98-12</h5>
+            <h5>57(5)386-02-37</h5>
         </section>
         <footer>
             <!--Pie de pagina-->
