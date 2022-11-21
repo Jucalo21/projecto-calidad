@@ -138,12 +138,23 @@ li {
     text-align: center;
 }
 
-/*Seccion Secundaria*/
+/*Seccion principal*/
+#principal2 {
+    margin-top: 20px;
+    border: 1px;
+    width: 40%;
+    float: left;
+    padding: 5px;
+    text-align: center;
+}
+
+
+/*Seccion secundaria*/
 #secundario {
     margin-top: 20px;
     border: 1px;
     width: 40%;
-    float: right;
+    float: left;
     padding: 5px;
     text-align: center;
 }
