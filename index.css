@@ -132,28 +132,7 @@ li {
 #principal {
     margin-top: 20px;
     border: 1px;
-    width: 40%;
-    float: left;
-    padding: 5px;
-    text-align: center;
-}
-
-
-/*Seccion secundaria*/
-#secundario {
-    margin-top: 20px;
-    border: 1px;
-    width: 40%;
-    float: left;
-    padding: 5px;
-    text-align: center;
-}
-
-/*Sidebar*/
-#content aside {
-    margin-top: 20px;
-    border: 1px;
-    width: 20%;
+    width: 100%;
     float: left;
     padding: 5px;
     text-align: center;
@@ -188,18 +167,6 @@ li {
         width: 45%;
     }
 
-    #secundaria {
-        float: right;
-        padding: 3%;
-        width: 45%;
-    }
-
-    #content aside {
-        clear: both;
-        padding: 5%;
-        width: 90%;
-    }
-
     #content footer {
         width: 100%;
         padding: 0;
@@ -216,17 +183,6 @@ li {
         width: auto;
         float: none;
         margin: 0px;
-    }
-
-    #secundario {
-        width: auto;
-        float: none;
-        margin: 0px;
-    }
-
-    #content aside {
-        padding: 0;
-        width: auto;
     }
 
     #content footer {
