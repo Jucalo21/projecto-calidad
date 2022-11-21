@@ -4,7 +4,7 @@
 
 body{
     margin: 0;
-    background: url(/imagenes/fondo.jpg);
+    background: url(imagenes/fondo.jpg);
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Catamaran', sans-serif;
