@@ -138,6 +138,16 @@ li {
     text-align: center;
 }
 
+/*Seccion Secundaria*/
+#secundario {
+    margin-top: 20px;
+    border: 1px;
+    width: 40%;
+    float: right;
+    padding: 5px;
+    text-align: center;
+}
+
 /*Pie de pagina*/
 #content footer {
     clear: both;
