@@ -7,11 +7,10 @@ $(document).ready(function () {
         var txt_email = localStorage.getItem('Email');
         var txt_contraseña = localStorage.getItem('Password');
         //compara los datos de localstorage y input
-        if (txt_email    == txtEmail && txt_contraseña == txtPassword) {
-            //se llama al documento donde va a iniciar
-            window.location = 'ssession.html';
+        if (txt_email === txtEmail && txt_contraseña === txtPassword) {
+            window.location = "/actividades.html";
         } else {
-
+            alert("¡contraseña incorrecta o email, por favor comprobar!")
         }
     });
 });
