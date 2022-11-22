@@ -1,0 +1,166 @@
+/*Fuente de estilo importada*/
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Catamaran', sans-serif;
+}
+
+body{
+    background-image: url("imagenes/fondo.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header{
+    margin-top: 60px;
+    text-align: center;
+    background-color: rgb(241, 235, 194);
+    color: black;
+    padding: 10px 0;
+}
+
+.container{
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(241, 235, 194);
+}
+
+section{
+    border: 2px solid #5624d0;
+    border-radius: 7px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+label{
+    display: block;
+    padding: 7px;
+    border-radius: 7px;
+    cursor: pointer;
+    border: 1px dashed #ccc;
+    margin-bottom: 3px;
+}
+
+label:hover{
+    background:#cec0fc;
+}
+
+button{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding: 10px;
+
+    background-color: #76d7c8;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+button:hover{
+    background: rgb(14, 163, 64);
+    columns: #fff;
+}
+
+h2{
+    text-align: center;
+}
+
+#resultado{
+    font-size: 30px;
+    color: darkred;
+}
+
+/*Barra de navegacion*/
+#navbar {
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+}
+
+/*Barra de navegacion*/
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 8px 20px;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.lista-sm {
+    display: block;
+}
+
+/*Barra de navegacion*/
+#navbar li {
+    float: left;
+}
+
+/*Barra de navegacion*/
+#navbar li a {
+    padding: 10px 5px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1em;
+    text-align: center;
+    color: white;
+}
+
+#navbar li.active a {
+    color: lightseagreen;
+}
+
+li {
+    margin: auto;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/*Cambio de color cuando se pasa el mouse por encima de la barra de navegacion*/
+#navbar li a:hover {
+    border-radius: 6px;
+    border-bottom: 4px solid white;
+}
+
+/*Icono de la barra de navegacion*/
+.myicon {
+    color: white;
+    font-size: 1.5em;
+    padding: 10px;
+    display: none;
+}
+
+/*Cuando el ancho de la pagina sea de 600px o menos se adaptara a las siguientes caracteristicas*/
+@media screen and (max-width: 600px) {
+    .lista-sm {
+        display: none;
+        width: 100%;
+        height: 100%;
+    }
+
+    #navbar li {
+        float: none;
+        display: block;
+    }
+
+    #navbar li a {
+        padding: 5px;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .myicon {
+        display: block;
+        text-align: center;
+    }
+}

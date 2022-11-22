@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingles</title>
+    <!--Libreria de bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/782e424ced.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/actividad.css">
+</head>
+<body><!--Barra de navegacion y listas-->
+    <nav id="navbar">
+        <!--Icono de la barra de navegacion-->
+        <div class="myicon">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul class="lista-sm">
+            <!--Direccionamiento de la barra de navegacion-->
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="actividades.html">Actividades</a></li>
+            <li><a href="atencion.html">Atencion al cliente</a></li>
+            <li><a href="registro.html">Registrarse</a></li>
+            <li><a href="inicioDeSesion.html">Inicio de Sesion</a></li>
+        </ul>
+    </nav>
+    <header> 
+        <h1>Actividad De Ingles</h1>
+    </header>
+    <div class="container">
+        <section id="p0">
+            <h3>1- ¿Como se dice hola en ingles?</h3>
+            <label>
+                <input type="radio" value="1" name="p0" onclick="respuesta(0,this)">Bye
+            </label>
+            <label>
+                <input type="radio" value="2" name="p0" onclick="respuesta(0,this)">Tomorrow
+            </label>
+            <label>
+                <input type="radio" value="3" name="p0" onclick="respuesta(0,this)">Hello
+            </label>
+            <label>
+                <input type="radio" value="4" name="p0" onclick="respuesta(0,this)">See you later
+            </label>
+        </section>
+        <section id="p1">
+            <h3>2- ¿Como se dice Rojo en ingles?</h3>
+            <label>
+                <input type="radio" value="1" name="p1" onclick="respuesta(1,this)">Red
+            </label>
+            <label>
+                <input type="radio" value="2" name="p1" onclick="respuesta(1,this)">White
+            </label>
+            <label>
+                <input type="radio" value="3" name="p1" onclick="respuesta(1,this)">Rod
+            </label>
+            <label>
+                <input type="radio" value="4" name="p1" onclick="respuesta(1,this)">Blue
+            </label>
+        </section>
+        <section id="p2">
+            <h3>3- ¿Como se dice hasta luego?</h3>
+            <label>
+                <input type="radio" value="1" name="p2" onclick="respuesta(2,this)">See you later
+            </label>
+            <label>
+                <input type="radio" value="2" name="p2" onclick="respuesta(2,this)">How are you?
+            </label>
+            <label>
+                <input type="radio" value="3" name="p2" onclick="respuesta(2,this)">Today
+            </label>
+            <label>
+                <input type="radio" value="4" name="p2" onclick="respuesta(2,this)">Hello
+            </label>
+        </section>
+
+        <button onclick="corregir()">CORREGIR</button>
+        <h2>Cantidad acertadas: <span id="resultado"></span></h2>
+    </div>
+        <!--Libreria de jquery importada-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!--Funciones de app.js-->
+        <script src="app.js"></script>
+        <!-- Importar SweetAlert -->
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <!-- Correccion de preguntas -->
+        <script src="js/actividadIng.js"></script>
+</body>
+</html>

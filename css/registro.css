@@ -4,7 +4,7 @@
 
 body{
     margin: 0;
-    background: url(/imagenes/fondo.jpg);
+    background: url(imagenes/fondo.jpg);
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Catamaran', sans-serif;
@@ -23,6 +23,7 @@ body{
     width: 100%;
     display: flex;
     justify-content: center;
+    z-index: 3;
 }
 
 /*Barra de navegacion*/
@@ -63,10 +64,9 @@ li {
     font-size: 20px;
     cursor: pointer;
 }
-    
 
 /*Cambio de color cuando se pasa el mouse por encima de la barra de navegacion*/
-#navbar li:hover {
+#navbar li a:hover {
     border-radius: 6px;
     border-bottom: 4px solid white;
 }

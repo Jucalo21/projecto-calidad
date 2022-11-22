@@ -42,7 +42,8 @@ img {
     top: 0;
     width: 100%;
     display: flex;
-    justify-content: center
+    justify-content: center;
+    z-index: 3;
 }
 
 /*Barra de navegacion*/
@@ -115,6 +116,7 @@ li {
     background-color: rgba(255, 253, 240, 0.61);
     padding: 1%;
     border-radius: 12px;
+    z-index: 2;
 }
 
 /*Cabecera de la pagina*/
@@ -130,6 +132,16 @@ li {
 #principal {
     margin-top: 20px;
     border: 1px;
+    width: 100%;
+    float: left;
+    padding: 5px;
+    text-align: center;
+}
+
+/*Seccion principal*/
+#principal2 {
+    margin-top: 20px;
+    border: 1px;
     width: 40%;
     float: left;
     padding: 5px;
@@ -142,16 +154,6 @@ li {
     margin-top: 20px;
     border: 1px;
     width: 40%;
-    float: left;
-    padding: 5px;
-    text-align: center;
-}
-
-/*Sidebar*/
-#content aside {
-    margin-top: 20px;
-    border: 1px;
-    width: 20%;
     float: left;
     padding: 5px;
     text-align: center;
@@ -186,18 +188,6 @@ li {
         width: 45%;
     }
 
-    #secundaria {
-        float: right;
-        padding: 3%;
-        width: 45%;
-    }
-
-    #content aside {
-        clear: both;
-        padding: 5%;
-        width: 90%;
-    }
-
     #content footer {
         width: 100%;
         padding: 0;
@@ -214,17 +204,6 @@ li {
         width: auto;
         float: none;
         margin: 0px;
-    }
-
-    #secundario {
-        width: auto;
-        float: none;
-        margin: 0px;
-    }
-
-    #content aside {
-        padding: 0;
-        width: auto;
     }
 
     #content footer {
